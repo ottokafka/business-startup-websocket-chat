@@ -1,11 +1,8 @@
 const express = require("express");
 const mongoose = require("mongoose");
-const Chat = require("./models/user/Chat");
+const Chat = require("./Chat");
 const WebSocket = require("ws");
 const WebSocketServer = WebSocket.Server;
-
-const path = require("path");
-const app = express();
 
 // connecting to mongodb
 const connectDB = async () => {
@@ -27,11 +24,10 @@ const connectDB = async () => {
 };
 connectDB();
 
-// getting json from user
-app.use(express.json({ extended: false }));
-
+const path = require("path");
+// const app = express();
 // PORT number for Express Server and Websocket Server
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 5000;
 const HOST = "0.0.0.0";
 
 const server = express().listen(PORT, () =>
