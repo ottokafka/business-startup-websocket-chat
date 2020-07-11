@@ -1,0 +1,25 @@
+{
+  "name": "business-startup-websocket-chat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ottokafka/business-startup-websocket-chat.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ottokafka/business-startup-websocket-chat/issues"
+  },
+  "homepage": "https://github.com/ottokafka/business-startup-websocket-chat#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.9.23",
+    "ws": "^7.3.1"
+  }
+}
